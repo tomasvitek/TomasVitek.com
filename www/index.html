@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tomas Vitek &mdash; web &amp; app developer and AI student</title>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=EB+Garamond">
+		<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+
+		<meta property="og:url" content="http://www.tomasvitek.com">
+		<meta property="og:title" content="tomasvitek.com">
+		<meta property="og:image" content="http://www.tomasvitek.com/img/fbshare.png">
+		<meta property="og:description" content="Tomas Vitek &mdash; web &amp; app developer and AI student">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	</head>
+
+	<body>
+		<section class="cover">
+			<div class="centering-table">
+				<div class="centering-table-cell">
+					<div class="centering-center-block">
+						<div class="wrapper">
+							<header>
+								<h1>Tomas Vitek</h1>
+								<h2>I am not a speed reader.<br>I am a speed understander.</h2>
+							</header>
+							<div class="intro">
+								<p>Hi there! I am a web and app developer from Prague, Czech Republic, living in London and studying <em>Artificial Intelligence</em> at <a href="http://www.kcl.ac.uk/index.aspx">King's College London</a>. I enjoy technology, great design, good music and thrilling books and movies. Say hi to me <a href="http://www.twitter.com/tomikvitek">@tomikvitek</a>!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="mailto:me@tomasvitek.com" class="button" data-track="contact">Contact</a></li>
+					<li><a href="http://www.twitter.com/tomikvitek" class="button" data-track="twitter">Twitter</a></li>
+					<li><a href="http://cv.tomasvitek.com" class="button" data-track="cv">CV</a></li>
+					<li><a href="http://github.com/tomikvitek" class="button" data-track="github">Github</a></li>
+					<li><a href="http://www.linkedin.com/in/tomasvitek" class="button" data-track="linkedin">LinkedIn</a></li>
+				</ul>
+			</nav>
+		</section>
+
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-165474-5', 'tomasvitek.com');
+			ga('send', 'pageview');
+
+			$('.button').on('click', function() {
+				var label = $(this).data('track');
+				ga('send', 'event', 'button', 'click', label);
+			});
+		</script>
+	</body>
+</html>
