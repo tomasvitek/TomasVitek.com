@@ -1,0 +1,168 @@
+/* Sections */
+
+%section {
+	clear: both;
+	margin: 0 auto;
+	padding-top: 0;
+	padding-bottom: 40px;
+	width: 80%;
+	max-width: 700px;
+}
+
+%avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 120px;
+}
+
+.avatar {
+	border: 4px solid $secondary-color;
+	margin: 0 auto 20px auto;
+	@extend %avatar;
+	img {
+		@extend %avatar;
+	}
+}
+
+.cover {
+	background-color: $background-color;
+	.wrapper {
+		width: 100%;
+		max-width: 700px;
+		margin: 0 auto;
+	}
+	header {
+		margin-top: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.intro {
+		margin: 0 auto;
+		padding-top: 0;
+		padding-bottom: 20px;
+		width: 80%;
+		max-width: 700px;
+		a {
+			font-style: normal;
+			border-bottom: 1px solid $link-underline-color;
+			&:hover {
+				font-style: normal;
+				border-bottom: 2px solid $link-hover-underline-color !important;
+			}
+		}
+	}
+	nav {
+		width: 50%;
+		margin: 0 auto;
+		a {
+			display: inline-block;
+			width: 100%;
+			margin-bottom: 12px;
+			padding-top: 12px;
+			padding-bottom: 12px;
+			border: 2px solid $border-color;
+			transition: all 0.15s;
+			&:hover {
+				color: $background-color;
+				background-color: $primary-color;
+				border: 2px solid $primary-color;
+				transition: all 0.1s;
+			}
+		}
+		ul {
+			position: relative;
+			padding-bottom: 50px;
+			animation: slide-up 0.8s ease 0s both;
+		}
+	}
+}
+
+.contact {
+	clear: both;
+	@extend %section;
+	.item {
+		margin-left: 40px;
+		clear: both;
+		h3 {
+			width: 20%;
+			float: left;
+			font-size: 18px;
+		}
+		a {
+			float: left;
+		}
+		address {
+			float: left;
+			color: $primary-color;
+		}
+	}
+}
+
+.publications {
+	@extend %section;
+}
+
+.teaching {
+	@extend %section;
+	padding-top: 30px;
+	p {
+		font-size: 16px;
+		text-align: left;
+		margin-left: 20px;
+	}
+	ul li {
+		font-size: 16px;
+		text-align: left;
+		a {
+			font-size: 16px;
+			text-align: left;
+		}
+	}
+}
+
+.related {
+	@extend %section;
+	p {
+		font-size: 16px;
+		text-align: left;
+	}
+	ul li {
+		font-size: 16px;
+		text-align: left;
+		a {
+			font-size: 16px;
+			text-align: left;
+		}
+	}
+}
+
+@media(min-width: 900px) {
+	.cover {
+		position: relative;
+		height: 100%;
+		header {
+			padding-top: 20px;
+		}
+		.intro {
+			width: 80%;
+			padding-bottom: 10px;
+		}
+		nav {
+			margin-top: 30px;
+			width: 100%;
+			margin-top: 0;
+			position: absolute;
+			bottom: 40px;
+			ul {
+				animation: slide-up 0.8s ease 0.2s both;
+			}
+			li {
+				display: inline-block;
+				margin: 0 6px;
+			}
+			a {
+				width: 130px;
+			}
+		}
+	}
+}

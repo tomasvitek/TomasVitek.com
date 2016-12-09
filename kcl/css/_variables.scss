@@ -1,0 +1,39 @@
+$primary-font: "EB Garamond", serif;
+$primary-color: white;
+$secondary-color: #00507f;
+
+$background-color: #0071bc;
+$border-color: rgba(255, 255, 255, 0.6);
+
+$link-underline-color: #ccc;
+$link-hover-underline-color: #ccc;
+
+$off-black: #222222;
+$dark-grey: #333333;
+$medium-grey: #808080;
+$light-grey: #f2f2f2;
+
+$x-large-breakpoint: 1200px;
+$large-breakpoint: 960px;
+$medium-breakpoint: 580px;
+$small-breakpoint: 380px;
+
+$vertical-breakpoint: 320px;
+
+$large-max-width: 960px;
+$medium-max-width: 640px;
+$small-max-width: 400px;
+
+
+@mixin group {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin transition($property, $time) {
+	transition: $property $time;
+	-webkit-transition: $property $time;
+}
