@@ -503,6 +503,8 @@ ul li {
     padding-top: 40px;
     padding-bottom: 40px;
     text-align: center; }
+  .cover header h1, .cover header h2 {
+    text-align: center; } 
   .cover .intro {
     margin: 0 auto;
     padding-top: 0;
