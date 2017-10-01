@@ -1,0 +1,11 @@
+####################
+## TomasVitek.com ##
+####################
+
+RewriteEngine on
+RewriteBase /
+
+## HTTP -> HTTPS ##
+## (!!) Disable http->https in Blueboard administration
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}  [L,R=301]
