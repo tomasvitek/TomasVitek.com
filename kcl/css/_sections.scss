@@ -124,6 +124,28 @@
 	}
 }
 
+.roles {
+	@extend %section;
+	padding-top: 0;
+	p {
+		font-size: 16px;
+		text-align: justify;
+		margin-left: 20px;
+		margin-top: 15px;
+		a {
+			font-size: 16px;
+		}
+	}
+	ul li {
+		font-size: 16px;
+		text-align: left;
+		a {
+			font-size: 16px;
+			text-align: left;
+		}
+	}
+}
+
 .related {
 	@extend %section;
 	p {

@@ -475,7 +475,7 @@ ul li {
   .show-on-large {
     display: initial; } }
 /* Sections */
-.contact, .publications, .teaching, .related {
+.contact, .publications, .teaching, .related, .roles {
   clear: both;
   margin: 0 auto;
   padding-top: 0;
@@ -553,8 +553,6 @@ ul li {
       float: left;
       color: white; }
       
-.teaching {
-  padding-top: 30px; }
   .teaching p {
     font-size: 16px;
     text-align: left;
@@ -563,6 +561,22 @@ ul li {
     font-size: 16px;
     text-align: left; }
     .teaching ul li a {
+      font-size: 16px;
+      text-align: left; }
+
+.roles {
+  padding-top: 0; }
+  .roles p {
+    font-size: 16px;
+    text-align: justify;
+    margin-left: 20px;
+    margin-top: 15px; }
+  .roles a {
+    font-size: 16px;}
+  .roles ul li {
+    font-size: 16px;
+    text-align: left; }
+    .roles ul li a {
       font-size: 16px;
       text-align: left; }
 
