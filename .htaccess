@@ -9,3 +9,6 @@ RewriteBase /
 ## (!!) Disable http->https in Blueboard administration
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}  [L,R=301]
+
+# Security
+RewriteRule ^(.*)(/)?security.txt$ https://tomasvitek.com/.well-known/security.txt [R=301,L]
