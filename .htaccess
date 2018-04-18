@@ -11,4 +11,15 @@ RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}  [L,R=301]
 
 # Security
-RewriteRule ^(.*)(/)?security.txt$ https://tomasvitek.com/.well-known/security.txt [R=301,L]
+Redirect 301 /security.txt /.well-known/security.txt
+
+# Magic subdomains
+RewriteCond %{HTTP_HOST} ^scholar\.tomasvitek\.com$ [NC]
+RewriteRule ^(.*) https://scholar.google.co.uk/citations?user=XVbprnoAAAAJ&hl=en [L,R=303]
+
+# Redirects
+RewriteCond %{HTTP_HOST} ^pebbike\.tomasvitek\.com$ [NC]
+RewriteRule ^(.*) http://pebbike.utils.cz/$1 [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^pebcity\.tomasvitek\.com$ [NC]
+RewriteRule ^(.*) http://pebcity.utils.cz/$1 [L,R=301]
