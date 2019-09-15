@@ -15,9 +15,14 @@
     background-color: #eee;
 }
 
- h1 {
+h1 {
     font-weight: 200;
 }
+
+h2 {
+    font-weight: 100;
+    margin-bottom: 0.6em;
+} 
 
 
 /* Layout */
@@ -30,6 +35,14 @@
 .content {
     max-width: 350px;
     margin: 20px auto 0 auto;
+}
+
+.content-long {
+    margin: 20px auto 0 auto;
+}
+
+.content-long p {
+    text-align: justify;
 }
 
 .screenshot {
@@ -50,6 +63,13 @@
     }
 }
 
+/* Content */
+
+.signature, p.signature {
+    text-align: right;
+    font-size: small;
+    font-style: italic;
+}
 
 /* Links */
 
