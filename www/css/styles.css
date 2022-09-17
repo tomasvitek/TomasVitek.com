@@ -468,6 +468,10 @@ a {
   text-decoration: none;
 }
 
+.emoji {
+  filter: sepia(80%) hue-rotate(190deg) saturate(300%);
+}
+
 @media (min-width: 900px) {
   /* line 59, _typography.scss */
   h1 {
@@ -631,7 +635,7 @@ html, body {
 .cover header {
   position: relative;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   -webkit-animation: slide-down 1s;
   /* Safari 4+ */
   -moz-animation: slide-down 1s;
@@ -667,6 +671,11 @@ html, body {
 .cover .intro a:hover {
   font-style: normal;
   border-bottom: 2px solid #00507f;
+}
+.cover .intro p {
+  max-width: 450px;
+  margin: 20px auto 0 auto;
+  line-height: 1.5;
 }
 /* line 49, _sections.scss */
 .cover nav {
